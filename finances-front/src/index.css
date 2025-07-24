@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: cupcake --default;
+}
+
+/* #root {
+  max-width: inherit !important;
+  margin: 0 !important;
+  padding: 0 !important;
+} */
