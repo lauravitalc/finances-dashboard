@@ -1,5 +1,7 @@
 import './App.css'
-import { Dashboard, Navbar, Footer, Menu } from './components/layout'
+import { Navbar, Footer, Menu } from './components/layout'
+import { Route, Routes } from 'react-router-dom'
+import { Dashboard, Transactions, Categories } from './components/pages'
 
 function App() {
 
@@ -7,7 +9,11 @@ function App() {
     <div>
       <Navbar />
       <Menu />
-      <Dashboard />
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/transactions" element={<Transactions />} />
+        <Route path="/categories" element={<Categories />} />
+      </Routes>
       <Footer />
     </div>
   )
