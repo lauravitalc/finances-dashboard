@@ -1,11 +1,11 @@
 import React from 'react';
-import Card from '../../ui/Card/card';
+import Card from '../../ui/Card';
 import { NavLink } from 'react-router-dom';
 
 const Menu: React.FC = () => {
     return (
         <div className="flex justify-center items-center w-full pt-6">
-            <Card variant="menu">
+            <Card>
                 <ul className="menu menu-horizontal menu-lg">
                     <li><NavLink
                         to="/"

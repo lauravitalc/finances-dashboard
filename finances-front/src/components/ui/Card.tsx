@@ -12,8 +12,6 @@ const Card: React.FC<CardProps> = ({ className = '', children, variant = 'defaul
   const getVariantClasses = (variant: CardVariant): string => {
     switch (variant) {
       case 'default':
-        return 'card bg-base-100 shadow-sm p-6';
-      case 'menu':
         return 'card';
       case 'minimal':
         return 'card bg-base-100 p-4';
