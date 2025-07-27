@@ -5,6 +5,10 @@ const Transactions: React.FC = () => {
     return (
         <div className="p-6">
             <h1 className='text-2xl font-bold'>Transactions</h1>
+            <p className='text-sm text-gray-500'>Manage your transactions here.</p>
+            <Card variant='default' className='mt-6'>
+                <button className="btn btn-active btn-primary">New transaction</button>
+            </Card>
             <Card variant='default' className='bg-base-100 mt-6'>
                 <div className="overflow-x-auto">
                     <table className="table table-zebra">
