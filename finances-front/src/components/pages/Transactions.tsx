@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Actions } from '../ui';
+import { PlusIcon } from '@heroicons/react/24/outline';
 
 const Transactions: React.FC = () => {
     return (
@@ -7,7 +8,9 @@ const Transactions: React.FC = () => {
             <h1 className='text-2xl font-bold'>Transactions</h1>
             <p className='text-sm text-gray-500'>Manage your transactions here.</p>
             <Card variant='default' className='mt-6'>
-                <button className="btn btn-active btn-primary">New transaction</button>
+                <button className="btn btn-active btn-primary">
+                    <PlusIcon className="size-5 text-white" />
+                    New transaction</button>
             </Card>
             <Card variant='default' className='bg-base-100 mt-6'>
                 <div className="overflow-x-auto">
