@@ -1,35 +1,12 @@
 import React from 'react';
-import { Card, Actions } from '../ui';
-import { ArrowDownIcon, FunnelIcon, PlusIcon } from '@heroicons/react/24/outline';
+import { Card, Actions, MenuTransactions } from '../ui';
 
 const Transactions: React.FC = () => {
     return (
         <div className="p-6">
             <h1 className='text-2xl font-bold'>Transactions</h1>
             <p className='text-sm text-gray-500'>Manage your transactions here.</p>
-            <Card variant='default' className='mt-6'>
-                <div>
-                    <div className="dropdown dropdown-bottom">
-                        <div tabIndex={0} role="button" className="btn m-1"><FunnelIcon className="size-4"/>Filter</div>
-                        <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                            <li><a>Item 1</a></li>
-                            <li><a>Item 2</a></li>
-                        </ul>
-                    </div>
-
-                    <div className="dropdown dropdown-bottom">
-                        <div tabIndex={0} role="button" className="btn m-1"><ArrowDownIcon className="size-4"/>Categories</div>
-                        <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                            <li><a>Item 1</a></li>
-                            <li><a>Item 2</a></li>
-                        </ul>
-                    </div>
-
-                    <button className="btn btn-active btn-primary">
-                        <PlusIcon className="size-5 text-white" />New transaction
-                    </button>
-                </div>
-            </Card>
+            <MenuTransactions />
             <Card variant='default' className='bg-base-100 mt-6'>
                 <div className="overflow-x-auto">
                     <table className="table table-zebra">
