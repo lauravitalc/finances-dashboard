@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Actions, MenuTransactions } from '../ui';
+import { TransactionModal } from '../modal';
 
 const Transactions: React.FC = () => {
     return (
@@ -59,6 +60,7 @@ const Transactions: React.FC = () => {
                     </table>
                 </div>
             </Card>
+            <TransactionModal />
         </div>
     );
 };
