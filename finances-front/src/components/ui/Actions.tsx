@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 interface ActionsProps {
     className?: string;
@@ -7,8 +8,8 @@ interface ActionsProps {
 const Actions: React.FC<ActionsProps> = ({ className }) => {
     return (
         <div className={`flex space-x-2 ${className}`}>
-            <button className="btn btn-sm">Edit</button>
-            <button className="btn btn-sm btn-error">Delete</button>
+            <Button className="btn-sm">Edit</Button>
+            <Button className="btn-sm btn-error">Delete</Button>
         </div>
     );
 };
