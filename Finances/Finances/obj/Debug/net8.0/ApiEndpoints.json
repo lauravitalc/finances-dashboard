@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "ContainingType": "Finances.Controllers.TransactionsController",
+    "Method": "CreateTransaction",
+    "RelativePath": "api/transactions",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "transaction",
+        "Type": "Finances.Transaction",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
