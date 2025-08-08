@@ -1,0 +1,25 @@
+# .NET/C# specific
+bin/
+obj/
+*.user
+*.suo
+*.cache
+
+# Entity Framework
+Migrations/
+*.db-shm
+*.db-wal
+
+# ASP.NET Core
+wwwroot/
+
+# Application specific files
+appsettings.Production.json
+launchSettings.json
+
+# Financial data (sensitive)
+exports/
+reports/
+backups/
+financial-data/
+user-data/
