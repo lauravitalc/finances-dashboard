@@ -1,1 +1,233 @@
+############################
+# Build & compilação
+############################
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+[Aa]rtifacts/
+[Tt]emp/
+
+############################
+# Configurações locais / IDE
+############################
 .vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.idea/
+*.iml
+
+############################
+# Plataformas / Arquiteturas
+############################
+x64/
+x86/
+[Aa][Rr][Mm]*/
+[Rr]elease*/
+[Dd]ebug*/
+[Dd]ebugPublic/
+[Rr]eleases/
+
+############################
+# Testes e cobertura
+############################
+TestResult*/
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+coverage/
+coverage-report/
+coverage.opencover.xml
+*.opencover.xml
+*.lcov
+
+############################
+# Pacotes e NuGet
+############################
+**/packages/*
+!**/packages/build/
+.nuget/
+*.nupkg
+project.lock.json
+project.assets.json
+
+############################
+# Ferramentas & Analyzers
+############################
+_ReSharper*/
+*.DotSettings.user
+*.ncrunch*
+nCrunchTemp_*
+.sonar/
+.sonarqube/
+.stylecop/
+
+############################
+# Publicação / Deploy
+############################
+publish/
+*.pubxml
+*.publishsettings
+
+############################
+# Configuração & Segredos
+############################
+secrets.json
+UserSecrets/
+.env
+.env.*
+appsettings.*.Local.json
+appsettings.Local.json
+
+# (Opcional) descomente se NÃO quiser versionar appsettings de dev:
+# appsettings.Development.json
+
+############################
+# Banco de dados local / cache
+############################
+*.db
+*.sqlite
+*.sqlite3
+*.mdf
+*.ldf
+
+############################
+# Logs
+############################
+*.log
+
+############################
+# Docker (opcionais)
+############################
+docker-compose.override.yml
+
+############################
+# Outros
+############################
+*.pid
+*.pidb
+*.svclog
+*.orig
+*.tmp
+~$*
+############################
+```// filepath: c:\Users\laura\finances-dashboard\Finances\.gitignore
+############################
+# Build & compilação
+############################
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+[Aa]rtifacts/
+[Tt]emp/
+
+############################
+# Configurações locais / IDE
+############################
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.idea/
+*.iml
+
+############################
+# Plataformas / Arquiteturas
+############################
+x64/
+x86/
+[Aa][Rr][Mm]*/
+[Rr]elease*/
+[Dd]ebug*/
+[Dd]ebugPublic/
+[Rr]eleases/
+
+############################
+# Testes e cobertura
+############################
+TestResult*/
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+coverage/
+coverage-report/
+coverage.opencover.xml
+*.opencover.xml
+*.lcov
+
+############################
+# Pacotes e NuGet
+############################
+**/packages/*
+!**/packages/build/
+.nuget/
+*.nupkg
+project.lock.json
+project.assets.json
+
+############################
+# Ferramentas & Analyzers
+############################
+_ReSharper*/
+*.DotSettings.user
+*.ncrunch*
+nCrunchTemp_*
+.sonar/
+.sonarqube/
+.stylecop/
+
+############################
+# Publicação / Deploy
+############################
+publish/
+*.pubxml
+*.publishsettings
+
+############################
+# Configuração & Segredos
+############################
+secrets.json
+UserSecrets/
+.env
+.env.*
+appsettings.*.Local.json
+appsettings.Local.json
+
+# (Opcional) descomente se NÃO quiser versionar appsettings de dev:
+# appsettings.Development.json
+
+############################
+# Banco de dados local / cache
+############################
+*.db
+*.sqlite
+*.sqlite3
+*.mdf
+*.ldf
+
+############################
+# Logs
+############################
+*.log
+
+############################
+# Docker (opcionais)
+############################
+docker-compose.override.yml
+
+############################
+# Outros
+############################
+*.pid
+*.pidb
+*.svclog
+*.orig
+*.tmp
+~$*
+############################
