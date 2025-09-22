@@ -24,8 +24,10 @@ namespace Finances
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
+        [StringLength(50)]
         public PaymentMethod? Method { get; set; }
 
+        [StringLength(50)]
         public TransactionType Type { get; set; } = TransactionType.Expense;
 
         public DateTime? UpdatedAt { get; set; }

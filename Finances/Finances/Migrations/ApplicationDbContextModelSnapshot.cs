@@ -50,9 +50,11 @@ namespace Finances.Migrations
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<int?>("Method")
+                        .HasMaxLength(50)
                         .HasColumnType("int");
 
                     b.Property<int>("Type")
+                        .HasMaxLength(50)
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("UpdatedAt")
