@@ -1,6 +1,6 @@
 ﻿namespace Finances.Repositories
 {
-    public class TransactionRepository
+    public class TransactionsRepository
     {
     }
 }

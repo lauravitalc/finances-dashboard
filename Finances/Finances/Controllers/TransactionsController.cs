@@ -16,7 +16,7 @@ namespace Finances.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetTransactions(int id) {
+        public IActionResult GetTransactionById(int id) {
             // Logic to get a specific transaction by id
             return Ok($"Transaction {id}");
         }
