@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Finances.Interfaces.Services;
+using Finances.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Finances.Controllers
@@ -7,6 +9,11 @@ namespace Finances.Controllers
     [ApiController]
     public class TransactionsController : ControllerBase
     {
+        private readonly ITransactionsService _transactionsService;
+        public TransactionsController(ITransactionsService transactionsService)
+        {
+            _transactionsService = transactionsService;
+        }
 
         [HttpGet]
         public IActionResult GetTransactions()
@@ -22,10 +29,10 @@ namespace Finances.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateTransaction()
+        public IActionResult CreateTransaction(Transaction transaction)
         {
-            // Logic to create a transaction
-            return Ok("Transaction created");
+           _transactionsService.CreateAsync(transaction);
+            return CreatedAtAction(nameof(GetTransactionById), new { id = transaction.Id }, transaction);
         }
 
         [HttpPatch("{id}")]

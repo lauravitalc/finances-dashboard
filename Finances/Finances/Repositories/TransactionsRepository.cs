@@ -21,5 +21,12 @@ namespace Finances.Repositories
                .OrderByDescending(t => t.Date)
                .ToListAsync(ct);
         }
+
+        public async Task<Transaction> CreateAsync(Transaction transaction)
+        {
+            _context.Transactions.Add(transaction);
+            await _context.SaveChangesAsync();
+            return transaction;
+        }
     }
 }
