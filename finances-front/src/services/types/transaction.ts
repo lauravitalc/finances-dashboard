@@ -18,7 +18,7 @@ export interface CreateTransactionRequest {
   type: string;
   status: string;
   category: string;
-  tags: string;
+  tags: string[];
 }
 
 export interface CreateTransactionResponse {
