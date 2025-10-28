@@ -27,7 +27,7 @@ const MenuTransactions: React.FC = () => {
                 />
 
                 <Button className="btn-active btn-primary" onClick={() => {
-                    const modal = document.getElementById('my_modal_1') as HTMLDialogElement;
+                    const modal = document.getElementById('transactionModal') as HTMLDialogElement;
                     modal?.showModal();
                 }}>
                     <PlusIcon className="size-5 text-white" />New transaction
