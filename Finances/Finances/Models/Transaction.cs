@@ -1,4 +1,5 @@
 ﻿using Finances.Enums;
+using Microsoft.EntityFrameworkCore;
 
 namespace Finances.Models;
 
@@ -7,6 +8,8 @@ public class Transaction
     public Guid Id { get; set; }
     public required string Name { get; set; }
     public string? Description { get; set; }
+
+    [Precision(18, 2)]
     public decimal Amount { get; set; }
     public DateOnly Date { get; set; }
     public TransactionType Type { get; set; } = TransactionType.Expense;
