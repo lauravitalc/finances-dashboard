@@ -4,6 +4,6 @@ namespace Finances.Interfaces.Services
 {
     public interface ITransactionsService
     {
-        void CreateAsync(Transaction transaction);
+        Task CreateAsync(Transaction transaction);
     }
 }

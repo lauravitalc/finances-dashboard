@@ -6,7 +6,7 @@ namespace Finances.Interfaces.Repositories
     {
         Transaction? GetById(Guid id);
         List<Transaction> GetAllAsync();
-        void CreateTransaction(Transaction transaction);
+        Task CreateTransaction(Transaction transaction);
         void UpdateTransaction(Transaction transaction);
         void DeleteTransaction(Guid id);
     }

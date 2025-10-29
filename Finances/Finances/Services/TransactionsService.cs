@@ -1,9 +1,10 @@
-﻿using Finances.Models;
+﻿using Finances.Interfaces.Services;
+using Finances.Models;
 using Finances.Repositories;
 
 namespace Finances.Services
 {
-    public class TransactionsService
+    public class TransactionsService : ITransactionsService
     {
         private readonly TransactionsRepository _repository;
 
@@ -12,7 +13,8 @@ namespace Finances.Services
             _repository = repository;
         }
 
-        public async void CreateAsync(Transaction transaction) { 
+        public async Task CreateAsync(Transaction transaction)
+        {
             await _repository.CreateAsync(transaction);
         }
     }

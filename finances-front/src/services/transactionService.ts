@@ -1,7 +1,7 @@
 import axios, { type AxiosResponse } from 'axios';
 import type { Transaction, CreateTransactionRequest, CreateTransactionResponse } from './types/transaction';
 
-const API_URL = 'http://localhost:5198/api/transactions';
+const API_URL = 'https://localhost:7210/api/transactions';
 
 export const createTransaction = async (transactionData: CreateTransactionRequest): Promise<CreateTransactionResponse> => {
   try {

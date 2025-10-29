@@ -27,9 +27,9 @@ namespace Finances.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateTransaction(Transaction transaction)
+        public async Task<IActionResult> CreateTransaction(Transaction transaction)
         {
-            _transactionsService.CreateAsync(transaction);
+            await _transactionsService.CreateAsync(transaction);
             return CreatedAtAction(nameof(GetTransactionById), new { id = transaction.Id }, transaction);
         }
 
